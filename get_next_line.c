@@ -29,7 +29,7 @@ static int		buffcat(const int fd, char **temp)
 
 int				get_next_line(const int fd, char **line)
 {
-	static char	*temp[BUFF_SIZE];
+	static char	*temp[5000];
 	char		*nl;
 	int			read;
 
