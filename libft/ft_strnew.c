@@ -6,7 +6,11 @@
 /*   By: egreen <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 10:01:21 by egreen            #+#    #+#             */
+<<<<<<< HEAD
+/*   Updated: 2017/11/17 12:26:20 by egreen           ###   ########.fr       */
+=======
 /*   Updated: 2017/10/03 15:52:45 by egreen           ###   ########.fr       */
+>>>>>>> 912280583a873f6858d24bb07e02d90a66fee452
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +18,16 @@
 
 char	*ft_strnew(size_t size)
 {
+<<<<<<< HEAD
+	char	*s;
+
+	if ((s = malloc(size + 1)) == NULL)
+		return (NULL);
+	while (size)
+		s[size--] = '\0';
+	*s = '\0';
+	return (s);
+=======
 	return ((char *)ft_memalloc(size + 1));
+>>>>>>> 912280583a873f6858d24bb07e02d90a66fee452
 }

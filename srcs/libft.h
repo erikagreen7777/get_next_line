@@ -17,6 +17,7 @@
 # include <string.h>
 # include <unistd.h>
 # include <stdio.h>
+# define NULL_GUARD(a) if(!(a)) return (NULL);
 
 typedef struct		s_list
 {
@@ -90,8 +91,4 @@ int					ft_ispunct(int c);
 void				ft_swap(int *a, int *b);
 int					ft_isupper(int c);
 char				*ft_strfjoin(char *s1, char *s2);
-<<<<<<< HEAD
-char				*ft_strndup(const char *s1, size_t n);
-=======
->>>>>>> 912280583a873f6858d24bb07e02d90a66fee452
 #endif
